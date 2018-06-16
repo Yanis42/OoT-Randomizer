@@ -1,7 +1,4 @@
-#TODO
-
-Delete 40 & 50 Skulls
-Delete Big Poes
+DISCLAIMER: You need to know how to megaflip, weirdshot and hover for stealing Epona without doing the race.
 
 # OoTRandomizer
 
