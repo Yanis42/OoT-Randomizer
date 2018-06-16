@@ -152,7 +152,7 @@ def global_rules(world):
     set_rule(world.get_location('Song from Ocarina of Time'), lambda state: state.has('Kokiri Emerald') and state.has('Goron Ruby') and state.has('Zora Sapphire') and state.guarantee_hint())
     set_rule(world.get_entrance('Door of Time'), lambda state: state.has('Song of Time') or world.open_door_of_time or state.has('Kokiri Sword'))
     set_rule(world.get_location('Talons Chickens'), lambda state: state.has('Zeldas Letter'))
-    set_rule(world.get_location('Epona'), lambda state: state.has('Eponas Song') and state.is_adult() or state.can_blast())
+    set_rule(world.get_location('Epona'), lambda state: state.has('Eponas Song') and state.is_adult() or state.can_blast() and state.is_adult())
     set_rule(world.get_entrance('Adult Forest Warp Pad'), lambda state: state.has('Minuet of Forest') and state.is_adult())
     set_rule(world.get_entrance('Child Forest Warp Pad'), lambda state: state.has('Minuet of Forest'))
     set_rule(world.get_entrance('Adult Meadow Access'), lambda state: state.has('Sarias Song') and state.is_adult() or state.has('Progressive Hookshot') and state.is_adult())
